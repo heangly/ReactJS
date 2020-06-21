@@ -1,6 +1,6 @@
-Application: Pokegame
-Author: Heang Ly
-Date: 2020
+- Application: Pokegame
+- Author: Heang Ly
+- Date: 2020
 
 What does it do?
 - Displaying pokemon characters randomly with theirs type, exp
