@@ -1,0 +1,1 @@
+This is a simple color boxes exercise for practicing React state.
