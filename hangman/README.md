@@ -11,4 +11,3 @@ A simple game that you have to guess words by displaying spots for the letters.
 ## Technologies
 - JavaScript
 - React Js
-- SVG
