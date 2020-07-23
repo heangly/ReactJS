@@ -29,6 +29,7 @@
   line-height: 30px;
   color:#fff;
   text-transform: uppercase;
+  cursor: pointer;
   border: none;
   opacity: 0;
 }
