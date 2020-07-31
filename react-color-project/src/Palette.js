@@ -28,6 +28,7 @@ class Palette extends Component{
         name={color.name} 
         key={color.id} 
         moreUrl={`/palette/${id}/${color.id}`}
+        showLink
       />
     ));
 
@@ -39,7 +40,7 @@ class Palette extends Component{
         </div>
         <footer className="Palette-footer">
           {paletteName}
-    <span className="emoji">{emoji}</span>
+           <span className="emoji">{emoji}</span>
         </footer>
       </div>
     )
