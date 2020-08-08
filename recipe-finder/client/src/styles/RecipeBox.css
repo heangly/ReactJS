@@ -1,0 +1,99 @@
+h4{
+  font-size: 25px;
+}
+
+.RecipeBox{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.RecipeBox img{
+  margin-top: 100px;
+  height: 300px;
+  width: 300px;
+  margin-bottom: 20px;
+  border: 4px solid #fff ;
+  border-radius: 30px;
+  transition: 0.6s ease;
+  box-shadow: 0 19px 38px rgba(0,0,0,0.30), 0 15px 12px rgba(0,0,0,0.22);
+}
+
+.RecipeBox-btn{
+  width:300px ;
+  display: flex;
+  justify-content: space-between;
+}
+
+.RecipeBox-btn-ingredient, 
+.RecipeBox-btn-like{
+  margin-top: 20px;
+  font-size: 0.9rem;
+  background-color: #fff;
+  padding: 15px 25px;
+  border-radius: 30px;
+  border:none;
+  /* border: 1px solid black; */
+  font-weight: bold;
+  transition: 0.6s ease;
+  box-shadow: 0 19px 38px rgba(0,0,0,0.30), 0 15px 12px rgba(0,0,0,0.22);
+}
+
+
+.RecipeBox-btn-ingredient{
+  padding: 15px 32px;
+}
+
+.RecipeBox-btn-ingredient:hover, .RecipeBox-btn-like:hover{
+  cursor: pointer;
+  transition: 0.6s ease;
+  transform: translate(0px, -10px) scale(1);
+}
+
+
+.RecipeBox-btn-ingredient:focus,
+.RecipeBox-btn-like:focus{
+  outline: none;
+}
+
+
+/* .RecipeBox{
+  margin-top: 100px;
+  cursor: pointer;
+  position: relative;
+  height: 300px;
+  width: 300px;
+  text-align: center;
+}
+
+
+.RecipeBox-info{
+  position: absolute;
+  top:0;
+  left:0;
+  height:100%;
+  width:100%;
+  background-color: rgba(0, 0, 0, 0.6);
+  display:flex;
+  align-items: center;
+  justify-content: center;
+  transition: opacity 0.3s ease-in;
+  opacity: 0;
+  border-radius: 30px;
+}
+
+.RecipeBox:hover .RecipeBox-info{
+  opacity: 1;
+  color:#fff;
+  border-radius: 30px;
+} 
+
+.RecipeBox{
+  margin-top: 100px;
+  cursor: pointer;
+  position: relative;
+  height: 300px;
+  width: 300px;
+  text-align: center;
+}
+ */

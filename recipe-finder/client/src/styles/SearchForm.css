@@ -1,0 +1,59 @@
+.SearchForm{
+  margin-top: 50px;
+}
+
+.SearchForm input{
+  text-align: center;
+  font-size: large;
+  height: 50px;
+  width: 500px;
+  border: none;
+  /* border: 1px solid black; */
+  box-shadow: 0 19px 38px rgba(0,0,0,0.30), 0 15px 12px rgba(0,0,0,0.22);
+  border-radius: 20px;
+  margin-bottom: 20px;
+  transition: 0.6s ease;
+}
+
+.SearchForm input:focus{
+  outline: none;
+  transition: 0.6s ease;
+  /* transform: translate(0px, -10px) scale(1); */
+  /* box-shadow: 0 19px 38px rgba(0,0,0,0.30), 0 15px 12px rgba(0,0,0,0.22); */
+}
+
+.SearchForm input:hover{
+  transition: 0.6s ease;
+  /* transform: translate(0px, -10px) scale(1); */
+  /* box-shadow: 0 19px 38px rgba(0,0,0,0.30), 0 15px 12px rgba(0,0,0,0.22); */
+}
+
+.SearchForm-btnContainer button{
+  font-size: 0.9rem;
+  background-color: #fff;
+  padding: 15px 50px;
+  border-radius: 20px;
+  border:none;
+  /* border: 1px solid black; */
+  font-weight: bold;
+  transition: 0.6s ease;
+  box-shadow: 0 19px 38px rgba(0,0,0,0.30), 0 15px 12px rgba(0,0,0,0.22);
+}
+
+.SearchForm-btnContainer button:hover{
+  cursor: pointer;
+  transition: 0.6s ease;
+  box-shadow: 0 19px 38px rgba(0,0,0,0.30), 0 15px 12px rgba(0,0,0,0.22);
+  transform: translate(0px, -10px) scale(1);
+}
+
+.SearchForm-btnContainer button:focus{
+  outline: none;
+}
+
+
+@media(max-width: 800px){
+  .SearchForm input{
+    width: 400px;
+  }
+}

@@ -1,0 +1,54 @@
+.Navbar{
+  background: #343a40;
+  margin-bottom: 40px;
+}
+
+.Navbar nav{
+  margin:0 50px;
+  height: 70px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.Navbar .Navbar-brand{
+  font-size: 40px;
+  color:#fff;
+  font-family:cursive;
+}
+
+.Navbar .Navbar-menu{
+  display: flex;
+  font-size: 18px;
+  text-transform: uppercase;
+}
+
+.Navbar .Navbar-menu a{
+  margin-left: 80px;
+}
+
+a{ 
+  text-decoration: none; 
+  color: #fff;
+}
+
+.Navbar-menu a:hover{
+  color: rgb(223, 222, 222);
+}
+
+@media only screen and (max-width:600px){
+  .Navbar nav{
+    height: 50px;
+    margin: 0 30px;
+  }
+
+  .Navbar .Navbar-brand{
+    font-size: 30px;
+  }
+
+  .Navbar .Navbar-menu{
+    display: flex;
+    font-size: 15px;
+    text-transform: uppercase;
+  }
+}
