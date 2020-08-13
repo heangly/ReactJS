@@ -10,6 +10,7 @@ import Divider from '@material-ui/core/Divider';
 import IconButton from '@material-ui/core/IconButton';
 import MenuIcon from '@material-ui/icons/Menu';
 import ChevronLeftIcon from '@material-ui/icons/ChevronLeft';
+import DraggableColorBox from './DraggableColorBox';
 import {ChromePicker} from 'react-color';
 import { Button, colors } from '@material-ui/core';
 
@@ -56,6 +57,7 @@ const styles = theme => ({
     justifyContent: 'flex-end',
   },
   content: {
+    height:'calc(100vh - 64px)',
     flexGrow: 1,
     padding: theme.spacing.unit * 3,
     transition: theme.transitions.create('margin', {
@@ -169,13 +171,13 @@ class NewPaletteForm extends Component{
         <main
           className={classNames(classes.content, {
             [classes.contentShift]: open,})}
-        >
+          >
           <div className={classes.drawerHeader} />
-          <ul>
-            {this.state.colors.map(color => (
-              <li style={{backgroundColor:color}}>{color}</li>
-            ))}
-          </ul>
+          
+          {this.state.colors.map(color => (
+            <DraggableColorBox color={color}/>
+          ))}
+          
         </main>
       </div>
     );
