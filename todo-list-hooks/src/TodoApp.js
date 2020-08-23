@@ -28,6 +28,13 @@ const TodoApp = () => {
     setTodos(updatedTodos);
   }
 
+  const editTodo = (todoId, newTask) => {
+    const updatedTodos = todos.map(todo => (
+      todo.id === todoId ? {...todo, task: newTask} : todo
+    ));
+    setTodos(updatedTodos);
+  }
+
   const toggleTodo = todoId => {
     const updatedTodos = todos.map(todo => 
       todo.id === todoId ? {...todo, completed: !todo.completed} : todo
@@ -58,6 +65,7 @@ const TodoApp = () => {
             todos={todos} 
             removeTodo={removeTodo} 
             toggleTodo={toggleTodo}
+            editTodo={editTodo}
           />
         </Grid>
       </Grid>

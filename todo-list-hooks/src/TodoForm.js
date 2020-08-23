@@ -14,12 +14,12 @@ const TodoForm = ({addTodo}) => {
   return(
     <Paper style={{margin:'1rem 0', padding:'0'}}>
       <form onSubmit={handleSubmit}>
-        <TextField
+        <TextField 
+          style={{margin:'10px', width:'96%'}}
           value={value}
           onChange={handleChange}
           margin='normal'
           label='Add New Todo'
-          fullWidth
         />
       </form>
     </Paper>
