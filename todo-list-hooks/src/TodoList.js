@@ -6,26 +6,27 @@ import Todo from './Todo';
 
 
 const TodoList = ({todos, removeTodo, toggleTodo, editTodo}) => {
-  return(
-    <Paper>
-      <List>
-        {todos.map((todo, idx) => (
-          <>
-          <Todo 
-            id={todo.id}
-            task={todo.task} 
-            key={todo.id} 
-            completed={todo.completed}
-            removeTodo={removeTodo}
-            toggleTodo={toggleTodo}
-            editTodo={editTodo}
-          />
-          {idx < todos.length-1 && <Divider/>}
-          </>
-        ))}
-      </List>
-    </Paper>
-  )
+  if (todos.length){
+    return(
+      <Paper>
+        <List>
+          {todos.map((todo, idx) => (
+            <>
+            <Todo 
+              {...todo}
+              key={todo.id} 
+              removeTodo={removeTodo}
+              toggleTodo={toggleTodo}
+              editTodo={editTodo}
+            />
+            {idx < todos.length-1 && <Divider/>}
+            </>
+          ))}
+        </List>
+      </Paper>
+    )
+  }
+  return null;
 }
 
 export default TodoList;
