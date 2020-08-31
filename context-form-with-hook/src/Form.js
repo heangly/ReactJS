@@ -14,6 +14,7 @@ import Select from "@material-ui/core/Select";
 import withStyles from "@material-ui/core/styles/withStyles";
 import styles from "./styles/FormStyles";
 import { LanguageContext } from "./contexts/LanguageContext";
+
 const words = {
   english: {
     signIn: "Sign In",
@@ -34,6 +35,7 @@ const words = {
     remember: "Recuérdame"
   }
 };
+
 function Form(props) {
   const { language, changeLanguage } = useContext(LanguageContext);
   const { classes } = props;

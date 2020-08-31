@@ -25,6 +25,7 @@ const content = {
     flag: "🇪🇸"
   }
 };
+
 function Navbar(props) {
   const { isDarkMode, toggleTheme } = useContext(ThemeContext);
   const { language } = useContext(LanguageContext);
