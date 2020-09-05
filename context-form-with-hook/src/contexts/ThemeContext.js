@@ -20,6 +20,4 @@ export class ThemeProvider extends Component{
       </ThemeContext.Provider>
     )
   }
-
-
 }
