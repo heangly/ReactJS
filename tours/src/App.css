@@ -1,0 +1,87 @@
+.container {
+  margin: 10% 20%;
+  text-align: center;
+}
+
+h1 {
+  font-size: 3rem;
+}
+
+.line {
+  width: 6rem;
+  height: 0.25rem;
+  background-color: #49a6e9;
+  margin: 15px auto;
+}
+
+.card {
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.19), 0 6px 6px rgba(0, 0, 0, 0.23);
+  border-radius: 10px;
+  margin: 50px 0px;
+  background-color: #fff;
+}
+
+.card img {
+  width: 100%;
+  height: 18rem;
+  object-fit: cover;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+}
+
+.tour-title {
+  margin: 10px 0 30px 0;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.tour-title .price {
+  color: #49a6e9;
+  background-color: #ebf7ff;
+  padding: 10px;
+  border-radius: 10px;
+}
+
+.content {
+  padding: 35px;
+}
+
+p {
+  text-align: start;
+}
+
+.btn,
+.btn-show {
+  color: #bb2525;
+  border: 1px solid #bb2525;
+  padding: 10px 15px;
+  font-size: 1.2rem;
+  background-color: #fff;
+  margin-bottom: 40px;
+  border-radius: 10px;
+  transition: 0.3s ease-in-out;
+}
+
+.btn-show {
+  padding: 5px 8px;
+  font-size: 0.7rem;
+  margin-left: 10px;
+  margin-top: 5px;
+}
+
+.btn:hover,
+.btn-show:hover {
+  cursor: pointer;
+  color: #fff;
+  background-color: #bb2525;
+}
+
+.btn:focus,
+.btn-show:focus {
+  outline: none;
+}
+
+p {
+  letter-spacing: 1.1px;
+}
