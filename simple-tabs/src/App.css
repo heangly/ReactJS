@@ -1,0 +1,140 @@
+:root {
+  --grey: #f1f5f8;
+  --primary: #149199;
+  --secondary: #324d67;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: var(--grey);
+  letter-spacing: 5px;
+}
+
+.container {
+  width: 80%;
+  margin: 80px auto;
+  text-align: center;
+}
+
+.main-title {
+  font-size: 3.5rem;
+}
+
+.line {
+  background-color: var(--primary);
+  height: 7px;
+  width: 150px;
+  border-radius: 10px;
+  margin: 15px auto;
+}
+
+.tab-container {
+  margin-top: 5rem;
+  display: flex;
+}
+
+.tab-name {
+  flex-basis: 270px;
+  margin-right: 20px;
+}
+
+.tab-info {
+  flex-grow: 1;
+  text-align: left;
+  margin-left: 80px;
+}
+
+.tab-info h1 {
+  font-size: 2.3rem;
+  font-weight: 500;
+}
+
+.tab-info h3 {
+  background-color: #dae2ec;
+  color: #617d98;
+  padding: 10px;
+  display: inline-block;
+  border-radius: 10px;
+  margin: 20px 0;
+  font-weight: 800;
+}
+
+.tab-info .date {
+  color: #617d98;
+  margin-bottom: 20px;
+  font-size: 1.2rem;
+}
+
+.duty {
+  display: flex;
+  justify-content: start;
+  align-items: center;
+  margin-bottom: 30px;
+}
+
+.duty i {
+  padding-right: 50px;
+  color: #149199;
+  font-size: 1.6rem;
+}
+
+.duties p {
+  font-size: 1.2rem;
+  letter-spacing: 2px;
+  line-height: 1.7rem;
+}
+
+.btn {
+  background-color: transparent;
+  display: block;
+  border: none;
+  border-left: 3px solid var(--primary);
+  font-size: 1.8rem;
+  margin-bottom: 50px;
+  text-align: center;
+  width: 100%;
+  text-transform: uppercase;
+  padding: 10px;
+}
+
+.btn:focus {
+  color: var(--primary);
+  outline: none;
+}
+
+.btn:hover {
+  cursor: pointer;
+  color: var(--primary);
+}
+
+.active {
+  color: var(--primary);
+}
+
+.btn-info {
+  margin-top: 80px;
+  border: none;
+  font-size: 1.2rem;
+  padding: 10px 80px;
+  background-color: var(--primary);
+  color: #dae2ec;
+  text-transform: uppercase;
+  font-weight: bold;
+  border-radius: 10px;
+  transition: all 0.3s ease-in-out;
+}
+
+.btn-info:focus {
+  outline: none;
+}
+
+.btn-info:hover {
+  cursor: pointer;
+  background-color: rgb(4, 223, 223);
+  color: black;
+}
