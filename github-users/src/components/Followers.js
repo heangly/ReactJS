@@ -3,7 +3,30 @@ import { GithubContext } from '../context/context';
 import styled from 'styled-components';
 
 const Followers = () => {
-  return <h2>followers component</h2>;
+  const { followers } = React.useContext(GithubContext);
+  let renderComponent = [];
+
+  for (let i = 0; i < 10; i++) {
+    renderComponent.push(
+      followers.map(({ avatar_url: img, html_url, login }, index) => (
+        <article key={index}>
+          <img src={img} alt={login} />
+          <div>
+            <h4>{login}</h4>
+            <a href={html_url} target='_blank'>
+              {html_url}
+            </a>
+          </div>
+        </article>
+      ))
+    );
+  }
+
+  return (
+    <Wrapper>
+      <div className='followers'>{renderComponent}</div>
+    </Wrapper>
+  );
 };
 
 const Wrapper = styled.article`
