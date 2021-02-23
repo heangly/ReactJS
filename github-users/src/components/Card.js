@@ -3,7 +3,7 @@ import { GithubContext } from '../context/context';
 import styled from 'styled-components';
 import { MdBusiness, MdLocationOn, MdLink } from 'react-icons/md';
 const Card = () => {
-  const { githubUser } = React.useContext(GithubContext);
+  const { githubUser, error } = React.useContext(GithubContext);
   const {
     avatar_url,
     html_url,
@@ -27,7 +27,7 @@ const Card = () => {
           follow
         </a>
       </header>
-      <p className='io'>{bio.slice(18)}</p>
+      <p className='bio'>{bio.slice(18)}</p>
       <div className='links'>
         <p>
           <MdBusiness />
