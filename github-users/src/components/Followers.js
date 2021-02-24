@@ -4,23 +4,19 @@ import styled from 'styled-components';
 
 const Followers = () => {
   const { followers } = React.useContext(GithubContext);
-  let renderComponent = [];
-
-  for (let i = 0; i < 10; i++) {
-    renderComponent.push(
-      followers.map(({ avatar_url: img, html_url, login }, index) => (
-        <article key={index}>
-          <img src={img} alt={login} />
-          <div>
-            <h4>{login}</h4>
-            <a href={html_url} target='_blank'>
-              {html_url}
-            </a>
-          </div>
-        </article>
-      ))
-    );
-  }
+  let renderComponent = followers.map(
+    ({ avatar_url: img, html_url, login }, index) => (
+      <article key={index}>
+        <img src={img} alt={login} />
+        <div>
+          <h4>{login}</h4>
+          <a href={html_url} target='_blank'>
+            {html_url}
+          </a>
+        </div>
+      </article>
+    )
+  );
 
   return (
     <Wrapper>

@@ -13,6 +13,7 @@ const Card = () => {
     bio,
     location,
     twitter_username,
+    login,
   } = githubUser;
 
   return (
@@ -21,13 +22,13 @@ const Card = () => {
         <img src={avatar_url} alt={name} />
         <div>
           <h4>{name}</h4>
-          <p>@{twitter_username || 'heang_ly'}</p>
+          <p>@{login}</p>
         </div>
         <a href={html_url} target='_blank'>
           follow
         </a>
       </header>
-      <p className='bio'>{bio.slice(18)}</p>
+      <p className='bio'>{bio}</p>
       <div className='links'>
         <p>
           <MdBusiness />
