@@ -1,27 +1,20 @@
-import React, {Component} from 'react';
-import './Pokecard.css'
+import React from 'react';
 
-// const POKE_API = 'https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/';
+const url = 'https://assets.pokemon.com/assets/cms2/img/pokedex/detail/';
 
-const POKE_API = 'https://assets.pokemon.com/assets/cms2/img/pokedex/detail/'
+const Pokecard = ({ id, name, type, base_experience }) => {
+  const convertToThreeDigits = (number, length) => {
+    let len = length - ('' + number).length;
+    return (len > 0 ? new Array(++len).join('0') : '') + number;
+  };
 
-let padToThree = number => (number <= 999 ? `00${number}`.slice(-3) : number);
+  id = convertToThreeDigits(id, 3);
 
-class Pokecard extends Component{
-  render(){
-    const {id, name, type, exp} = this.props;
-    let imgSrc = `${POKE_API}${padToThree(id)}.png`;
-    return(
-      <div className="Pokecard">
-        <h1 className="Pokecard-title">{name}</h1>
-        <div className="Pokecard-img">
-          <img src={imgSrc} alt={name}/>
-        </div>
-        <div className="Pokecard-data">Type: {type}</div>
-        <div className="Pokecard-data">Exp: {exp}</div>
-      </div>
-    );
-  }
-}
-
+  return (
+    <div className='pokecard'>
+      <h1>{name}</h1>
+      <img src={`${url}${id}.png`} alt={name} />
+    </div>
+  );
+};
 export default Pokecard;
