@@ -12,8 +12,10 @@ const Pokecard = ({ id, name, type, base_experience }) => {
 
   return (
     <div className='pokecard'>
-      <h1>{name}</h1>
+      <h4>{name}</h4>
       <img src={`${url}${id}.png`} alt={name} />
+      <p>Type: {type}</p>
+      <p className='exp'>EXP: {base_experience}</p>
     </div>
   );
 };
