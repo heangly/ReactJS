@@ -1,0 +1,15 @@
+main {
+  min-height: 70vh;
+}
+
+li.nav-item .nav-link.active-link {
+  color: #fff;
+}
+
+footer p:nth-child(2) {
+  margin-top: -10px;
+}
+
+span.badge {
+  border-radius: 50%;
+}
