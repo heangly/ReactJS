@@ -15,7 +15,7 @@ const App = () => {
   return (
     <Router>
       <Header />
-      <main className='container mt-5'>
+      <main className='container' style={{ marginTop: '10rem' }}>
         <Switch>
           <Route exact path='/' component={Home} />
           <Route path='/post' component={Post} />

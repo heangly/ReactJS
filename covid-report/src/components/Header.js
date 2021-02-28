@@ -3,7 +3,7 @@ import { Link, NavLink } from 'react-router-dom';
 
 const Header = () => {
   return (
-    <nav className='navbar navbar-expand-lg navbar-dark bg-dark'>
+    <nav className='navbar navbar-expand-lg navbar-dark bg-primary fixed-top'>
       <div className='container'>
         <Link className='navbar-brand' to='/'>
           <i className='fas fa-virus' /> Covid Report
