@@ -8,6 +8,7 @@
 
 body {
   /* background-color: #f8f9fa; */
+  /* background-color: var(--main-dark); */
   background-color: var(--main-dark);
   color: var(--main-text);
 }
@@ -110,12 +111,27 @@ span.badge {
   background-color: crimson;
 }
 
-.new-post {
+.new-post,
+.each-alert {
   background-color: var(--secondary-dark);
-  box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
+  box-shadow: 0 19px 38px rgba(0, 0, 0, 0.3), 0 15px 12px rgba(0, 0, 0, 0.22);
   border-radius: 10px;
 }
 
-.btn-info {
-  /* background-color: #2196f3; */
+.each-alert {
+  line-height: 10px;
+}
+
+.each-alert .close-btn button {
+  border-top-right-radius: 5px;
+  border-bottom-left-radius: 5px;
+  position: absolute;
+  top: 0;
+  right: 0;
+}
+
+.new-post .form-group input,
+.new-post .form-group select {
+  background-color: var(--main-gray);
+  color: var(--main-text);
 }

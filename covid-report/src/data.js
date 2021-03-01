@@ -29,10 +29,19 @@ const posts = [
     id: 4,
     user: 'Smith Doe',
     location: 'Natural Sciences',
-    date: '03/01/2021',
+    date: '03/05/2021',
     contracted: 'yes',
     img:
       'https://ansp.org/~/media/Images/ans/visit/plan/ANS%20Exterior-636.ashx?la=en'
+  },
+  {
+    id: 5,
+    user: 'John Doe',
+    location: 'University City Campus',
+    date: '03/06/2021',
+    contracted: 'yes',
+    img:
+      'https://d13b2ieg84qqce.cloudfront.net/f7ecb2ccb2eb309102010a4a9944285832fe3976.jpg'
   }
 ];
 

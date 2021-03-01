@@ -8,9 +8,9 @@ const NewPost = () => {
   return (
     <div className='row justify-content-center '>
       <div className='new-post p-5 col-md-6'>
-        <h4 className='text-center mb-3'>
+        <h3 className='text-center mb-3'>
           <i className='fas fa-plus'></i> New Post
-        </h4>
+        </h3>
         <form onSubmit={handleSubmit}>
           <div className='form-group'>
             <label htmlFor='location'>Location</label>
@@ -22,7 +22,7 @@ const NewPost = () => {
             </select>
           </div>
 
-          <div className='form-group'>
+          {/* <div className='form-group'>
             <label htmlFor='specific area'>Sepecific Area</label>
             <input
               type='text'
@@ -30,7 +30,7 @@ const NewPost = () => {
               id='specific area'
               placeholder='specific area'
             />
-          </div>
+          </div> */}
 
           <div className='form-group'>
             <label htmlFor='date'>Date</label>
@@ -45,7 +45,7 @@ const NewPost = () => {
             </select>
           </div>
 
-          <button className='btn btn-outline-info btn-block mt-5 rounded'>
+          <button className='btn btn-info btn-block mt-5 rounded'>
             Submit
           </button>
         </form>
