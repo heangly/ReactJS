@@ -39,7 +39,7 @@ const Header = () => {
                 to='/post'
                 activeClassName='active-link'
               >
-                <i className='fas fa-bullhorn'></i> Post
+                <i className='fas fa-plus'></i> Post
               </NavLink>
             </li>
             <li className='nav-item'>
@@ -72,11 +72,19 @@ const Header = () => {
                 <i className='fas fa-user' /> John
               </span>
               <div className='dropdown-menu'>
-                <NavLink className='dropdown-item' to='/setting'>
-                  Setting
+                <NavLink
+                  className='dropdown-item'
+                  to='/setting'
+                  activeClassName='dropdown-item-active'
+                >
+                  <i className='fas fa-cog'></i> Setting
                 </NavLink>
-                <NavLink className='dropdown-item' to='/login'>
-                  Logout
+                <NavLink
+                  className='dropdown-item'
+                  to='/login'
+                  activeClassName='dropdown-item-active'
+                >
+                  <i className='fas fa-sign-out-alt'></i> Logout
                 </NavLink>
               </div>
             </li>

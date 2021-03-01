@@ -1,5 +1,5 @@
 import React from 'react';
-import Posts from '../components/Posts';
+import PostContainer from '../components/PostContainer';
 import Statistic from '../components/Statistic';
 
 const Home = () => {
@@ -7,10 +7,10 @@ const Home = () => {
     <div className='home'>
       <div className='row d-flex justify-content-between'>
         <div className='col-lg-8'>
-          <Posts />
+          <PostContainer />
         </div>
         <div
-          className='d-none d-lg-block col-lg-3 border statistic-container'
+          className='d-none d-lg-block col-lg-3  statistic-container'
           style={{ height: '370px' }}
         >
           <Statistic />

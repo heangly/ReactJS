@@ -3,7 +3,7 @@ import Header from './components/Header';
 import Footer from './components/Footer';
 import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
 import Home from './pages/Home';
-import Post from './pages/Post';
+import NewPost from './pages/NewPost';
 import About from './pages/About';
 import Alert from './pages/Alert';
 import Setting from './pages/Setting';
@@ -18,7 +18,7 @@ const App = () => {
       <main className='container' style={{ marginTop: '10rem' }}>
         <Switch>
           <Route exact path='/' component={Home} />
-          <Route path='/post' component={Post} />
+          <Route path='/post' component={NewPost} />
           <Route path='/alert' component={Alert} />
           <Route path='/about' component={About} />
           <Route path='/setting' component={Setting} />

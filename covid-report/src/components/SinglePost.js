@@ -2,7 +2,7 @@ import React from 'react';
 
 const SinglePost = ({ user, location, date, contracted, img }) => {
   return (
-    <div className='single-post border mb-4'>
+    <div className='single-post mb-4'>
       <div className='row'>
         <div className='col-lg-6 image'>
           <img src={img} alt='' />

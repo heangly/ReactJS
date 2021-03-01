@@ -2,7 +2,7 @@ import React from 'react';
 import { AppContext } from '../context/context';
 import SinglePost from './SinglePost';
 
-const Posts = () => {
+const PostContainer = () => {
   const { posts } = React.useContext(AppContext);
 
   return (
@@ -14,4 +14,4 @@ const Posts = () => {
   );
 };
 
-export default Posts;
+export default PostContainer;
