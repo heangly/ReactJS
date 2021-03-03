@@ -1,6 +1,18 @@
 import React from 'react';
+import { AppContext } from '../context/context';
+import axios from 'axios';
 
-const SinglePost = ({ user, location, date, contracted, img }) => {
+const SinglePost = ({ id, user, location, date, contracted, img }) => {
+  const { loginUser, fetchData } = React.useContext(AppContext);
+
+  const handleDelete = async () => {
+    try {
+      await axios.delete(`/api/posts/${id}`);
+      fetchData();
+    } catch (e) {
+      console.log(e);
+    }
+  };
   return (
     <div className='single-post mb-4'>
       <div className='row'>
@@ -30,14 +42,19 @@ const SinglePost = ({ user, location, date, contracted, img }) => {
                 <span className='text-bold'>
                   <i className='fas fa-virus'></i> Contracted Virus:{' '}
                 </span>
-                {contracted}
+                {contracted ? 'Yes' : 'No'}
               </span>
             </div>
-            <div className='text-right mr-3'>
-              <button className='btn btn-sm rounded btn-danger'>
-                <i className='fas fa-trash-alt'></i> Delete
-              </button>
-            </div>
+            {loginUser.name === user && (
+              <div className='text-right mr-3'>
+                <button
+                  className='btn btn-sm rounded btn-danger'
+                  onClick={handleDelete}
+                >
+                  <i className='fas fa-trash-alt'></i> Delete
+                </button>
+              </div>
+            )}
           </div>
         </div>
       </div>

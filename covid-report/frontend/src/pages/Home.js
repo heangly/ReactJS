@@ -9,10 +9,7 @@ const Home = () => {
         <div className='col-lg-8'>
           <PostContainer />
         </div>
-        <div
-          className='d-none d-lg-block col-lg-3  statistic-container'
-          style={{ height: '370px' }}
-        >
+        <div className='d-none d-lg-block col-lg-3  statistic-container'>
           <Statistic />
         </div>
       </div>

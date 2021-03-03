@@ -1,6 +1,14 @@
-import React from 'react';
+import React, { useEffect } from 'react';
+import { AppContext } from '../context/context';
 
-const NewPost = () => {
+const NewPost = ({ history }) => {
+  const { loginUser } = React.useContext(AppContext);
+
+  useEffect(() => {
+    const user = JSON.parse(localStorage.getItem('loginUser'));
+    !user && history.push('/');
+  }, [history, loginUser]);
+
   const handleSubmit = (e) => {
     e.preventDefault();
   };
@@ -45,7 +53,7 @@ const NewPost = () => {
             </select>
           </div>
 
-          <button className='btn btn-info btn-block mt-5 rounded'>
+          <button className='btn btn-outline-success btn-block mt-5 rounded'>
             Submit
           </button>
         </form>

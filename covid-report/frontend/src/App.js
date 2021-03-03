@@ -6,7 +6,6 @@ import Home from './pages/Home';
 import NewPost from './pages/NewPost';
 import About from './pages/About';
 import Alert from './pages/Alert';
-import Setting from './pages/Setting';
 import Login from './pages/Login';
 import Register from './pages/Register';
 import NotFound from './pages/NotFound';
@@ -21,7 +20,6 @@ const App = () => {
           <Route path='/post' component={NewPost} />
           <Route path='/alert' component={Alert} />
           <Route path='/about' component={About} />
-          <Route path='/setting' component={Setting} />
           <Route path='/login' component={Login} />
           <Route path='/register' component={Register} />
           <Route path='*' component={NotFound} />

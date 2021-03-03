@@ -8,7 +8,7 @@ const PostContainer = () => {
   return (
     <div className='post'>
       {posts.map((post) => (
-        <SinglePost key={post.id} {...post} />
+        <SinglePost key={post._id} {...post} id={post._id} />
       ))}
     </div>
   );
