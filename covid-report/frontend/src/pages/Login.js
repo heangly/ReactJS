@@ -28,14 +28,20 @@ const Login = ({ history }) => {
           userName,
           password
         });
+
         localStorage.setItem(
           'loginUser',
           JSON.stringify({
             name: data.name,
-            address: data.address
+            address: data.address,
+            alert: data.alert
           })
         );
-        setLoginUser({ name: data.name, address: data.address });
+        setLoginUser({
+          name: data.name,
+          address: data.address,
+          alert: data.alert
+        });
         history.push('/');
       }
     } catch (e) {
@@ -69,6 +75,7 @@ const Login = ({ history }) => {
                 placeholder='Enter Your User Name'
                 value={userName}
                 onChange={(e) => setUserName(e.target.value)}
+                required
               />
             </div>
 
@@ -81,6 +88,7 @@ const Login = ({ history }) => {
                 placeholder='Enter Your Password'
                 value={password}
                 onChange={(e) => setPassword(e.target.value)}
+                required
               />
             </div>
 

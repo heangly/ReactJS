@@ -6,7 +6,7 @@ const Statistic = () => {
   let total = 0;
 
   return (
-    <div className='statistic text-center my-3'>
+    <div className='statistic text-center my-3 px-2'>
       <h4>
         {' '}
         <i className='fas fa-chart-bar'></i> Statistic
@@ -15,15 +15,16 @@ const Statistic = () => {
         {Object.keys(location).map((eachLocation) => {
           total += location[eachLocation];
           return (
-            <p key={eachLocation}>
-              {eachLocation}: {location[eachLocation]}
+            <p key={eachLocation} className='d-flex justify-content-between'>
+              <span>{eachLocation}:</span> {location[eachLocation]}
             </p>
           );
         })}
       </div>
       <hr />
-      <div className='total-case'>
-        <p>Total Cases: {total} cases</p>
+      <div className='d-flex justify-content-between'>
+        <span> Total Cases: </span>
+        {total} cases
       </div>
     </div>
   );

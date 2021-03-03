@@ -12,7 +12,8 @@ export const authUser = asyncHandler(async (req, res) => {
     res.json({
       _id: user._id,
       name: user.name,
-      address: user.address
+      address: user.address,
+      alert: user.alert
     });
   } else {
     // unauthorize
@@ -43,7 +44,8 @@ export const registerUser = asyncHandler(async (req, res) => {
     res.status(201).json({
       _id: user._id,
       name: user.name,
-      address: user.address
+      address: user.address,
+      alert: user.alert
     });
   } else {
     res.status(400);

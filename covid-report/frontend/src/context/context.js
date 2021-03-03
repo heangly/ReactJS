@@ -25,7 +25,6 @@ const AppProvider = ({ children }) => {
     posts.forEach(({ location: address }) => {
       newData[address] = newData[address] + 1 || 1;
     });
-
     setLocation({ ...newData });
   }, [posts.length]);
 

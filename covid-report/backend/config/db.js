@@ -2,7 +2,7 @@ import mongoose from 'mongoose';
 import colors from 'colors';
 
 const MONGO_URI =
-  'mongodb+srv://heangly:Heang123$@covid-report.88kuk.mongodb.net/test';
+  'mongodb+srv://heangly:covidreport338@covid-report.88kuk.mongodb.net/test';
 
 const connectDB = async () => {
   try {

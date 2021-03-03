@@ -61,7 +61,9 @@ const Header = () => {
                   activeClassName='active-link'
                 >
                   <i className='fas fa-bell'></i> Alert{' '}
-                  <span className='badge badge-success'>0</span>
+                  <span className='badge badge-success'>
+                    {loginUser.alert.length}
+                  </span>
                 </NavLink>
               </li>
             )}

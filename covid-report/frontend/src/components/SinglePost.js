@@ -2,7 +2,15 @@ import React from 'react';
 import { AppContext } from '../context/context';
 import axios from 'axios';
 
-const SinglePost = ({ id, user, location, date, contracted, img }) => {
+const SinglePost = ({
+  id,
+  user,
+  location,
+  date,
+  contracted,
+  img,
+  createdAt
+}) => {
   const { loginUser, fetchData } = React.useContext(AppContext);
 
   const handleDelete = async () => {
@@ -13,6 +21,7 @@ const SinglePost = ({ id, user, location, date, contracted, img }) => {
       console.log(e);
     }
   };
+
   return (
     <div className='single-post mb-4'>
       <div className='row'>
@@ -44,6 +53,10 @@ const SinglePost = ({ id, user, location, date, contracted, img }) => {
                 </span>
                 {contracted ? 'Yes' : 'No'}
               </span>
+
+              <small>
+                Posted on: {createdAt.slice(0, 10)} @ {createdAt.slice(11, 19)}
+              </small>
             </div>
             {loginUser.name === user && (
               <div className='text-right mr-3'>
